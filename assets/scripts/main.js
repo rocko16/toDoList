@@ -71,7 +71,7 @@ function agregarBtnEliminar() {
 
         const items = document.querySelectorAll('li');
 
-        /* Validando que ala eliminar vaciar la lista, se muestre el mensaje de "No quedan tareas por hacer" */
+        /* Validando que al eliminar vaciar la lista, se muestre el mensaje de "No quedan tareas por hacer" */
 
         if(items.length === 0) {
             mensajeVacio.style.display = "flex";
