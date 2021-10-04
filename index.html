@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="./assets/scripts/main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    
+    <div class="list roundBorder">
+
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+
+        <form>
+
+            <input type="text" id="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+
+            <button type="submit" id="agregarTarea">+</button>
+
+            <button type="submit" id="eliminarTareas" class="roundBorder">Eliminar Tareas</button>
+
+        </form>
+
+        <div id="tasksContainer">
+            <ul id="listaTareas">
+
+            </ul>
+        </div>
+
+        <div id="mensajeVacio">
+            <p>No quedan tareas por hacer!</p>
+        </div>
+    </div>
+
+</body>
+</html>
